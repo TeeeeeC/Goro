@@ -1,0 +1,13 @@
+﻿@using Goro.Models.Home
+@model IList<AssetsViewModel>
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    <div class="column">
+        <div class="header-image">
+            <img src="/Content/images/@Model[i].ImageName" />
+        </div>
+        <div class="section-part-three-content">@Model[i].Title</div>
+        <div>@Model[i].Content</div>
+    </div>
+}

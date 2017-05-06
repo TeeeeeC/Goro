@@ -1,0 +1,313 @@
+﻿body, .body, html {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.body {
+    overflow-y: scroll;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    font-size: 16px;
+}
+
+.header div {
+    display: inline-block;
+}
+
+#goro-header-logo {
+    height: 100%;
+    position: absolute;
+}
+
+#goro-header-logo .goro-header-link  {
+    display: inline-block;
+    background-color: #99CCEE;
+    width: 60px;
+    height: 100%;
+    position: relative;
+}
+
+#goro-header-logo img {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+}
+
+#middle-navigation {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+#middle-navigation ul {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+#middle-navigation ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    line-height: 60px;
+}
+
+#right-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+#right-navigation  div {
+    margin: 0 15px;
+    line-height: 60px;
+}
+
+#right-navigation .watch-demo,
+#home-page .section-part-one-learn-more-button {
+    background-color: #f92;
+    border: 1px solid #f92;
+    border-radius: 5px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#middle-navigation ul li:hover,
+#right-navigation .sign-in:hover,
+#right-navigation .buy:hover {
+    color: #99CCEE;
+    cursor: pointer;
+}
+
+#right-navigation .watch-demo:hover,
+#home-page .section-part-one-learn-more-button:hover,
+.section-part-two-button:hover {
+    background-color: #99CCEE;
+    border: 1px solid #99CCEE;
+    cursor: pointer;
+}
+
+#home-page {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+}
+
+#home-page, .section-part-one {
+    width: 100%;
+    height: 100%;
+}
+
+.section-part-one {
+    background-image: url(/Content/images/lifestyle-banner-city-street-blur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 60px;
+}
+
+#home-page .section-part-one-title {
+    font-size: 64px;
+    font-weight: 700!important;
+    text-transform: uppercase;
+}
+
+#home-page .section-part-one-text {
+    font-size: 16px;
+}
+
+#home-page .section-part-one-learn-more-button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#home-page .section-part-one-img {
+    display: inline-block;
+    position: relative;
+}
+
+#home-page .section-part-one-img img {
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: -35%;
+}
+
+.section-part-two {
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 20px 4px;
+    height: 250px;
+    width: 100%;
+}
+
+.section-part-two .column {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background: linear-gradient(#444,#222);
+    float: left;
+    overflow: hidden;
+}
+
+.section-part-two .register-section {
+    display: inline-block;
+    width: 60%;
+    float: left;
+    padding-top: 50px;
+}
+
+.register-section-title {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.register-section-content {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.section-part-two-button {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.register-image {
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.register-image img {
+    max-width: 460px;
+}
+
+.banner-customer-background {
+    background: url(/Content/images/banner-customer-univision.png) no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+}
+
+.column-second-content, .column-third-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.padding-25 {
+    padding: 25px 25px;
+}
+
+.padding-top-60 {
+    padding-top: 60px;
+}
+
+.section-part-three {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(#9CE,#69C);
+    position: relative;
+}
+
+.section-part-three-title {
+    font-size: 40px;
+}
+
+.section-part-three-assets {
+    margin-top: 60px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.section-part-three-assets img {
+    max-width: 60px;
+}
+
+.section-part-three-assets .column {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.section-part-three-assets .header-image {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.section-part-three-content {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-part-five {
+    background:  url(../../images/general_banner_3.jpg);
+}
+
+.customer-theater-logo img {
+    max-height: 74px;
+    max-width: 180px;
+    margin-bottom: 30px;
+}
+
+.customer-theater-container {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.9));
+    padding: 80px 200px;
+}
+
+.customer-theater-content, .customer-theater-quoter {
+    margin-bottom: 30px;
+}
+
+.customer-theater-content h3 {
+    line-height: 1.3;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.customer-theater-quoter-name {
+    text-transform: uppercase;
+}
+
+.customer-theater-quoter-text {
+    font-weight: 400;
+    opacity: .5;
+}
+
+.customer-theater-goro-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+
+.customer-theater-goro-button img {
+    cursor: pointer;
+}
