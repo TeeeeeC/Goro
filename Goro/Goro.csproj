@@ -125,51 +125,74 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Home\AssetsViewModel.cs" />
+    <Compile Include="Models\Home\BaseHomeViewModel.cs" />
+    <Compile Include="Models\Home\ClientsSayAboutUsViewModel.cs" />
     <Compile Include="Models\Home\SolutionsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\goro-icon-play-white.svg" />
-    <Content Include="Content\Styles\home\solutions.css" />
-    <Content Include="Content\images\banner-customer-univision.png" />
-    <Content Include="Content\images\device-ipad-iphone-app-buzz-home-2x.png" />
-    <Content Include="Content\images\general_banner_3.jpg" />
-    <Content Include="Content\images\goro-dp17-featurette-logo.png" />
-    <Content Include="Content\images\goro-icon-chat-message-discussion-bubble-reply-conversation-white.svg" />
-    <Content Include="Content\images\goro-icon-database-raid-white.svg" />
-    <Content Include="Content\images\goro-icon-graph-columns-growth-statistics-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-graph-line-chart-statistics-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-mobile-iphone-white.svg" />
-    <Content Include="Content\images\goro-icon-mobile-phone-call-ringing-nfc-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-money-usa-dollar-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-server-hosting-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-settings-gears-preferences-gearbox-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-settings-tools-configuration-preferences-white.svg" />
-    <Content Include="Content\images\goro-icon-user-profile-avatar-man-male-1-brand-gradient.svg" />
-    <Content Include="Content\images\goro-icon-users-profile-group-couple-man-woman-brand-gradient.svg" />
-    <Content Include="Content\images\goro_dashboard_featurette.png" />
-    <Content Include="Content\images\lifestyle-banner-city-street-blur.png" />
-    <Content Include="Content\images\logo-brand-goro-text-white.svg" />
-    <Content Include="Content\images\logo-customer-mastercard-white.svg" />
-    <Content Include="Content\images\logo-customer-univision-white.svg" />
-    <Content Include="Content\Styles\libraries\bootstrap.css" />
+    <Content Include="Public\images\avatar-customer-danaher-peter-sanborn.png" />
+    <Content Include="Public\images\avatar-customer-dhl-dina-bunn.png" />
+    <Content Include="Public\images\avatar-customer-mastercard-curt-fournier.png" />
+    <Content Include="Public\images\avatar-customer-national-geographic-brendan-hart.png" />
+    <Content Include="Public\images\danaher_banner_1.jpg" />
+    <Content Include="Public\images\dhl_banner_1.jpg" />
+    <Content Include="Public\images\goro-icon-play-white.svg" />
+    <Content Include="Public\images\logo-customer-danaher-color.svg" />
+    <Content Include="Public\images\logo-customer-danaher-white.svg" />
+    <Content Include="Public\images\logo-customer-dhl-color.svg" />
+    <Content Include="Public\images\logo-customer-dhl-white.svg" />
+    <Content Include="Public\images\logo-customer-mastercard-color.svg" />
+    <Content Include="Public\images\logo-customer-national-geographic-color.svg" />
+    <Content Include="Public\images\logo-customer-national-geographic-white.svg" />
+    <Content Include="Public\images\natgeo_banner_1.jpg" />
+    <Content Include="Public\scripts\home\clients-say-about-us.js" />
+    <Content Include="Public\styles\home\assets.css" />
+    <Content Include="Public\styles\home\clients-say-about-us.css" />
+    <Content Include="Public\styles\home\solutions.css" />
+    <Content Include="Public\images\banner-customer-univision.png" />
+    <Content Include="Public\images\device-ipad-iphone-app-buzz-home-2x.png" />
+    <Content Include="Public\images\general_banner_3.jpg" />
+    <Content Include="Public\images\goro-dp17-featurette-logo.png" />
+    <Content Include="Public\images\goro-icon-chat-message-discussion-bubble-reply-conversation-white.svg" />
+    <Content Include="Public\images\goro-icon-database-raid-white.svg" />
+    <Content Include="Public\images\goro-icon-graph-columns-growth-statistics-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-graph-line-chart-statistics-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-mobile-iphone-white.svg" />
+    <Content Include="Public\images\goro-icon-mobile-phone-call-ringing-nfc-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-money-usa-dollar-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-server-hosting-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-settings-gears-preferences-gearbox-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-settings-tools-configuration-preferences-white.svg" />
+    <Content Include="Public\images\goro-icon-user-profile-avatar-man-male-1-brand-gradient.svg" />
+    <Content Include="Public\images\goro-icon-users-profile-group-couple-man-woman-brand-gradient.svg" />
+    <Content Include="Public\images\goro_dashboard_featurette.png" />
+    <Content Include="Public\images\lifestyle-banner-city-street-blur.png" />
+    <Content Include="Public\images\logo-brand-goro-text-white.svg" />
+    <Content Include="Public\images\logo-customer-mastercard-white.svg" />
+    <Content Include="Public\images\logo-customer-univision-white.svg" />
+    <Content Include="Public\styles\libraries\bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Styles\shared\shared.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Public\styles\shared\shared.css" />
+    <Content Include="Public\scripts\libraries\bootstrap.js" />
+    <Content Include="Public\scripts\libraries\bootstrap.min.js" />
+    <None Include="Public\scripts\libraries\jquery-3.1.1.intellisense.js" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.js" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.min.js" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.slim.js" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.slim.min.js" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.slim.min.map" />
+    <Content Include="Public\scripts\libraries\jquery-3.1.1.min.map" />
+    <None Include="Public\scripts\libraries\jquery.validate-vsdoc.js" />
+    <Content Include="Public\scripts\libraries\jquery.validate.js" />
+    <Content Include="Public\scripts\libraries\jquery.validate.min.js" />
+    <Content Include="Public\scripts\libraries\jquery.validate.unobtrusive.js" />
+    <Content Include="Public\scripts\libraries\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Public\scripts\libraries\modernizr-2.6.2.js" />
+    <Content Include="Public\scripts\libraries\respond.js" />
+    <Content Include="Public\scripts\libraries\respond.min.js" />
+    <Content Include="Public\scripts\libraries\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -184,11 +207,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_Solutions.cshtml" />
     <Content Include="Views\Home\_Assets.cshtml" />
+    <Content Include="Views\Home\_ClientsSayAboutUs.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

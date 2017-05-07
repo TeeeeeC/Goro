@@ -1,0 +1,28 @@
+﻿.section-part-three-assets {
+    margin-top: 60px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.section-part-three-assets img {
+    max-width: 60px;
+}
+
+.section-part-three-assets .column {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.section-part-three-assets .header-image {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.section-part-three-content {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}

@@ -8,24 +8,29 @@
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Public/scripts/libraries/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+                        "~/Public/scripts/libraries/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Public/scripts/libraries/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Public/scripts/libraries/bootstrap.js",
+                      "~/Public/scripts/libraries/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/Styles/libraries/bootstrap.css",
-                      "~/Content/Styles/shared/shared.css",
-                      "~/Content/Styles/home/solutions.css"));
+            bundles.Add(new ScriptBundle("~/bundles/home").Include(
+                      "~/Public/scripts/home/clients-say-about-us.js"));
+
+            bundles.Add(new StyleBundle("~/Public/css").Include(
+                      "~/Public/styles/libraries/bootstrap.css",
+                      "~/Public/styles/shared/shared.css",
+                      "~/Public/styles/home/solutions.css",
+                      "~/Public/styles/home/assets.css",
+                      "~/Public/styles/home/clients-say-about-us.css"));
         }
     }
 }

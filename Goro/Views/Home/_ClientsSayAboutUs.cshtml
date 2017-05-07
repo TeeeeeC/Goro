@@ -1,0 +1,39 @@
+﻿@using Goro.Models.Home
+@model IList<ClientsSayAboutUsViewModel>
+
+<div class="customer-theater-wrapper">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="customer-theater closed" data-index="@i" style="background: url(../../Public/images/@Model[i].BackgroundImage)">
+            <div class="customer-theater-container">
+                <div class="customer-theater-logo">
+                    <img src="~/Public/images/@Model[i].ImageName" />
+                </div>
+                <div class="customer-theater-content">
+                    <h3>@Model[i].Content</h3>
+                </div>
+                <div class="customer-theater-quoter">
+                    <span class="customer-theater-quoter-name">@Model[i].ClientName</span>
+                    <span class="customer-theater-quoter-position">@Model[i].ClientPosition</span>
+                </div>
+                <div class="customer-theater-goro-button-container">
+                    <button class="customer-theater-goro-button">
+                        <img src="~/Public/images/goro-icon-play-white.svg" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="customer-avatars-container">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="customer-avatars-content">
+            <div class="customer-avatars-client" data-index="@i" style="background-image: url(../../Public/images/@Model[i].ClientImage)"></div>
+            <div class="customer-avatars-brand" style="background-image: url(../../Public/images/@Model[i].BrandImage)"></div>
+        </div>
+    }
+</div>
+
+<script src="~/Public/scripts/home/clients-say-about-us.js"></script>
