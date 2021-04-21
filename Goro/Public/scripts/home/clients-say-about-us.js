@@ -11,7 +11,7 @@
         }
 
         function initEvents() {
-            $customerAvatarsClient.click(clickCustomerAvatar)
+            $customerAvatarsClient.click(clickCustomerAvatar);
         }
 
         function clickCustomerAvatar() {
