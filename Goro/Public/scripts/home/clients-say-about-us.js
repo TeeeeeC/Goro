@@ -43,8 +43,8 @@
 
         return {
             init: init
-        }
-    }())
+        };
+    }());
 
     $(document).ready(function () {
         clientsSayAboutUsModule.init();
